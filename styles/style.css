@@ -117,6 +117,7 @@ header {
 .project-item{
     line-height: 1.25rem;
     position: relative;
+    cursor: pointer;
 }
 
 .project-item::after {
