@@ -1,0 +1,184 @@
+/* Universal Styles */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #2B2A33;
+    display: grid;
+    grid-template: auto / repeat(4, 1fr);
+    gap: 15px;
+    justify-items: center;
+    align-items: center;
+}
+
+p,
+li {
+    font-family: Lato, sans-serif;
+    color: #FFF;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+h1,
+h2 {
+    font-family: Comfortaa, serif;
+    color: #FFF
+}
+
+h1 {
+    font-size: 56px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+a:visited {
+    color: #FFF;
+}
+
+a:hover {
+    color: #E63EFF;
+}
+
+/* Nav */
+nav{
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 4;
+}
+
+#nav-list {
+    display: grid;
+}
+
+#nav-list li {
+    margin: 0.25rem 1rem;
+    position: relative;
+}
+
+.nav-item a::before {
+    content: "";
+    position: absolute;
+    height: 3px;
+    right: 0;
+    bottom: -3px;
+    left: 0;
+    background-color: #E63EFF;
+}
+
+/* Header */
+header {
+    grid-row: 2 / span 3; 
+    grid-column: 1 / span 4;
+    text-align: center;
+}
+
+#selfie {
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+/* About Section */
+#About {
+    grid-row: 5 / span 3;
+    grid-column: 1 / span 4;
+    text-align: center;
+}
+
+/* Projects Section */
+#Projects {
+    grid-row: 8 / span 3;
+    grid-column: 1 / span 4;
+    text-align: center;
+}
+
+#project-list {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.project-item{
+    line-height: 1.25rem;
+    position: relative;
+}
+
+.project-item::after {
+    content: '\1F892';
+    margin: 0 0.5rem;
+    font-size: 1.5rem;
+    position: absolute;
+    top: -0.05rem;
+    transition: all 0.25s;
+}
+
+.project-item:hover::after {
+    color:#E63EFF;
+    transform: rotate(90deg) translate(0.25rem);
+}
+
+/* Languages Section */
+#Languages {
+    grid-row: 11 / span 2;
+    grid-column: 1 / span 4;
+    text-align: center;
+}
+
+#subgrid {
+    display: grid;
+    grid-template: subgrid / subgrid;
+    gap: 15px;
+}
+
+#Java {
+    grid-row: 1 / span 1;
+    grid-column: 1 /span 1;
+    
+}
+
+#Javascript {
+    grid-row: 1 / span 1;
+    grid-column: 2 /span 1;
+}
+
+#html {
+    grid-row: 1 / span 1;
+    grid-column: 3 /span 1;
+}
+
+#css {
+    grid-row: 1 / span 1;
+    grid-column: 4 /span 1;
+}
+
+#Java,
+#Javascript,
+#html,
+#css {
+    width: 100%;
+    height: 100%;
+    justify-self: stretch;
+}
+
+/* Contact Section */
+#Contact {
+    grid-row: 13 / span 3;
+    grid-column: 1 / span 4;
+    text-align: center;
+}
