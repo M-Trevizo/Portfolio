@@ -181,10 +181,22 @@ header {
     grid-column: 4 /span 1;
 }
 
-#Java,
-#Javascript,
-#html,
-#css {
+#cplusplus {
+    grid-row: 2 / span 1;
+    grid-column: 1 / span 1;
+}
+
+#react {
+    grid-row: 2 / span 1;
+    grid-column: 2 / span 1;
+}
+
+#redux {
+    grid-row: 2 / span 1;
+    grid-column: 3 / span 1;
+}
+
+.language-icons {
     width: 100%;
     height: 100%;
     justify-self: stretch;
