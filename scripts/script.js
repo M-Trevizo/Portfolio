@@ -1,14 +1,13 @@
 //Dropdown menu logic
 const dropDown = e => {
 
-    const description = e.target.nextElementSibling;
-    if(description.hasAttribute('hidden')) {
-        description.removeAttribute('hidden');
+    const descriptionStyle = e.target.nextElementSibling.style;
+    if(descriptionStyle.visibility === 'collapse') {
+        descriptionStyle.visibility = 'visible';
     }
     else {
-        description.setAttribute('hidden', "");
+        descriptionStyle.visibility = 'collapse';
     }
-
 }
 
 const projectOne = document.getElementById('project-one');
