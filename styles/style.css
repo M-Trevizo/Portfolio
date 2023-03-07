@@ -17,7 +17,8 @@ p,
 li {
     font-family: Lato, sans-serif;
     color: #FFF;
-    line-height: 1.5rem;
+    line-height: 1.75rem;
+    font-size: 17px;
 }
 
 ul {
@@ -127,7 +128,7 @@ header {
 }
 
 .project-item{
-    line-height: 1.75rem;
+    line-height: 2rem;
     position: relative;
     cursor: pointer;
 }
