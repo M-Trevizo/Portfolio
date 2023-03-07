@@ -1,7 +1,7 @@
 /* Universal Styles */
 
 * {
-    box-sizing: border-box;
+    box-sizing: border-box;   
 }
 
 body {
@@ -17,6 +17,7 @@ p,
 li {
     font-family: Lato, sans-serif;
     color: #FFF;
+    line-height: 1.5rem;
 }
 
 ul {
@@ -114,8 +115,19 @@ header {
     justify-content: center;
 }
 
+.project-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-image {
+    max-width: 325px;
+}
+
 .project-item{
-    line-height: 1.25rem;
+    line-height: 1.75rem;
     position: relative;
     cursor: pointer;
 }
@@ -182,4 +194,28 @@ header {
     grid-row: 13 / span 3;
     grid-column: 1 / span 4;
     text-align: center;
+}
+
+/* Media Query */
+@media only screen and (min-width: 550px) {
+    
+    body {
+        grid-template: auto / repeat(8, 1fr);
+    }
+
+    nav,
+    #Languages,
+    #Contact {
+        grid-column: 4 / span 2;
+    }
+    
+    header,
+    #About,
+    #Projects {
+        grid-column: 3 / span 4;
+    }
+
+    .project-image {
+        max-width: 500px;
+    }
 }
