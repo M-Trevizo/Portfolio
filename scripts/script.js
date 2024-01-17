@@ -11,6 +11,8 @@ const dropDown = e => {
 }
 
 const projectOne = document.getElementById('project-one');
-const porjectTwo = document.getElementById('project-two');
+const projectTwo = document.getElementById('project-two');
+const projectThree = document.getElementById('project-three');
 projectOne.onclick = dropDown;
-porjectTwo.onclick = dropDown;
+projectTwo.onclick = dropDown;
+projectThree.onclick = dropDown;

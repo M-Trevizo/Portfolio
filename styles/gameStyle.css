@@ -1,0 +1,23 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #2b2a33;
+}
+
+p {
+    color: #FFF;
+    margin-top: 3rem;
+    font-size: 1.25rem;
+    width: 750px;
+}
+
+.heading {
+    color: #FFF;
+}
+
+#game {
+    outline: solid #e63eff;
+}
